@@ -1264,13 +1264,6 @@ function App() {
         )}
       </div>
 
-      {/* Footer */}
-      <footer className="py-4 mt-auto border-top border-secondary-subtle bg-body-tertiary">
-        <div className="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
-          <span className="text-muted text-xs font-monospace">PulseNews &copy; 2026. Made for Daily News Management.</span>
-          <span className="badge bg-secondary-subtle text-secondary font-monospace text-xs">PHP Backend / React Frontend / Bootstrap 5 / jQuery AJAX</span>
-        </div>
-      </footer>
 
       {/* News Details Modal Dialog */}
       {selectedNews && (

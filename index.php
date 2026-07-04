@@ -1,6 +1,6 @@
 <?php
 /**
- * PulseNews Router
+ * DailyNews Router
  * Routes requests to the PHP API, uploaded media files, or the compiled React frontend.
  */
 
@@ -78,7 +78,7 @@ if (file_exists($indexFile)) {
     <!DOCTYPE html>
     <html>
     <head>
-        <title>PulseNews - Setup</title>
+        <title>DailyNews - Setup</title>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Inter:wght@400&display=swap" rel="stylesheet">
         <style>
             body {
@@ -119,7 +119,7 @@ if (file_exists($indexFile)) {
     </head>
     <body>
         <div class="card">
-            <h1>PulseNews Frontend Ready</h1>
+            <h1>DailyNews Frontend Ready</h1>
             <p>The backend PHP scripts are configured. To run the frontend, compile the React build by running:</p>
             <p><code>npm run build</code></p>
             <p>Or run the local development server with:</p>
