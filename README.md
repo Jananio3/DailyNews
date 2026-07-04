@@ -41,7 +41,7 @@ You can run the project in two ways:
 2. Move the entire folder directory to your web server host folder (e.g., `xampp/htdocs/news/`).
 3. Open your browser and navigate to `http://localhost/news/index.php`. The router will serve the production-ready React assets from the `dist/` directory and handle API queries seamlessly on a single port.
 ---
-### Steps to Run the Dashboard
+## Steps to Run the Dashboard
 1. Go to the terminal in any IDE
 2. Run this command - `C:\xampp\php\php.exe -S localhost:8000` index.php and Enter.
 3. Then open a new terminal to run the dashboard - `npm run dev`
