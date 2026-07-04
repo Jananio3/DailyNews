@@ -1,4 +1,4 @@
-DailyNews - Task
+### DailyNews - Task
 
 ## Setup & Installation Instructions
 
