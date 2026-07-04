@@ -1,0 +1,257 @@
+/* Import Fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+/* Custom CSS Variables */
+:root, [data-bs-theme="light"] {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --primary-glow: rgba(99, 102, 241, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+  --hover-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.18);
+  --nav-bg: rgba(255, 255, 255, 0.8);
+}
+
+[data-bs-theme="dark"] {
+  --primary-gradient: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+  --primary-glow: rgba(129, 140, 248, 0.25);
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  --hover-shadow: 0 20px 40px -15px rgba(129, 140, 248, 0.3);
+  --nav-bg: rgba(15, 23, 42, 0.8);
+}
+
+/* App Container Override */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border-inline: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism Styles */
+.glass-navbar {
+  background: var(--nav-bg) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.glass-modal .modal-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+}
+
+/* Gradients */
+.bg-gradient-primary {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Custom form validation styles */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: #6366f1;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}
+
+/* Drag & Drop File Upload Field */
+.file-upload-wrapper {
+  border: 2px dashed var(--glass-border);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(100, 116, 139, 0.03);
+  transition: all 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.file-upload-wrapper:hover, .file-upload-wrapper.dragover {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.file-upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* File Previews */
+.file-preview-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.file-preview-card img, .file-preview-card video {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.file-preview-delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.file-preview-delete:hover {
+  background: rgb(220, 38, 38);
+}
+
+/* Badge Styles */
+.badge-category {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.35em 0.65em;
+  border-radius: 6px;
+}
+
+/* Pagination Hover Effects */
+.page-link {
+  color: #6366f1;
+  border-color: var(--glass-border);
+  background-color: var(--glass-bg);
+  transition: all 0.2s ease;
+}
+
+.page-link:hover {
+  color: white;
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+.page-item.active .page-link {
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+.page-item.disabled .page-link {
+  background-color: rgba(100, 116, 139, 0.05);
+  border-color: var(--glass-border);
+}
+
+/* Skeleton loader for loading states */
+.skeleton {
+  background: linear-gradient(90deg, rgba(100, 116, 139, 0.1) 25%, rgba(100, 116, 139, 0.2) 37%, rgba(100, 116, 139, 0.1) 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom switch colors */
+.form-check-input:checked {
+  background-color: #6366f1;
+  border-color: #6366f1;
+}
+
+/* Tab Active Transitions */
+.nav-pills .nav-link.active {
+  background: var(--primary-gradient);
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.nav-pills .nav-link {
+  border-radius: 8px;
+  color: var(--bs-body-color);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+  background-color: rgba(100, 116, 139, 0.08);
+}
