@@ -30,7 +30,7 @@ npm install
 ### 4. Running the Project
 You can run the project in two ways:
 
-#### Option A: Development Server (Recommended)
+#### Development Server
 1. Start the Vite React development server:
    ```bash
    npm run dev
@@ -41,17 +41,19 @@ You can run the project in two ways:
    ```
 3. Update Vite's proxy settings or API endpoints in React if accessing via different ports (standard routing in Vite routes `/api.php` to target port).
 
-#### Option B: Production Build (Single Server Deployment)
-1. Build the production version of the frontend:
-   ```bash
-   npm run build
-   ```
-2. Move the entire folder directory to your web server host folder (e.g., `xampp/htdocs/news/`).
-3. Open your browser and navigate to `http://localhost/news/index.php`. The router will serve the production-ready React assets from the `dist/` directory and handle API queries seamlessly on a single port.
+<img width="1918" height="1132" alt="image" src="https://github.com/user-attachments/assets/5c575e06-2670-4205-af5e-291dadf5f52e" />
 
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/01503afb-5440-426e-b876-f7b5f202052b" />
 
-<img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/559fe491-3f64-42f0-bfe4-ac84b90ce79a" />
+<img width="1918" height="1127" alt="image" src="https://github.com/user-attachments/assets/16f2bc3a-c96f-43bc-8fe3-150980fb45394" />
 
-<img width="1842" height="1137" alt="image" src="https://github.com/user-attachments/assets/1bb26d60-239b-48f4-841a-a846415ac65b" />
+
+<img width="1918" height="1140" alt="image" src="https://github.com/user-attachments/assets/f70edcb5-20b6-4f02-9321-c5f8d52abfb0" />
+
+
+<img width="843" height="540" alt="image" src="https://github.com/user-attachments/assets/011eed0d-fb28-4c88-829b-87ae033f2e40" />
+
+
+<img width="1918" height="1138" alt="image" src="https://github.com/user-attachments/assets/8d3fef95-5bb8-44cb-861d-e8dfd71b85eb" />
+
+
 
