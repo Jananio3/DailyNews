@@ -3,7 +3,7 @@ Thank you for the opportunity to showcase my skills. Please go through the sourc
 
 ---
 
-### Dashboard of the DailyNews Website.
+#### Dashboard of the DailyNews Website.
 <img width="1918" height="1132" alt="image" src="https://github.com/user-attachments/assets/5c575e06-2670-4205-af5e-291dadf5f52e" />
 
 
@@ -22,5 +22,10 @@ Thank you for the opportunity to showcase my skills. Please go through the sourc
 #### Database Table.
 <img width="1918" height="1138" alt="image" src="https://github.com/user-attachments/assets/8d3fef95-5bb8-44cb-861d-e8dfd71b85eb" />
 
+#### How to Run :
+1. Clone this project
+2. Open Xampp Server and start MYSQL & Apache.
+3. Open a terminal and run ` C:\xampp\php\php.exe -S localhost:8000 index.php ` to start PHPs built-in development web server.
+4. And open a new terminal and run ` npm run dev ` to start the application in development mode. 
 
 
