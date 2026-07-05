@@ -51,3 +51,7 @@ You can run the project in two ways:
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/01503afb-5440-426e-b876-f7b5f202052b" />
 
+<img width="1918" height="1137" alt="image" src="https://github.com/user-attachments/assets/559fe491-3f64-42f0-bfe4-ac84b90ce79a" />
+
+<img width="1842" height="1137" alt="image" src="https://github.com/user-attachments/assets/1bb26d60-239b-48f4-841a-a846415ac65b" />
+
