@@ -48,3 +48,6 @@ You can run the project in two ways:
    ```
 2. Move the entire folder directory to your web server host folder (e.g., `xampp/htdocs/news/`).
 3. Open your browser and navigate to `http://localhost/news/index.php`. The router will serve the production-ready React assets from the `dist/` directory and handle API queries seamlessly on a single port.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/01503afb-5440-426e-b876-f7b5f202052b" />
+
