@@ -1,4 +1,5 @@
 # DailyNews - Task
+
 Thank you for the opportunity to showcase my skills. Please go through the source code and implementation.
 ---
 ### Dashboard of the DailyNews Website.
