@@ -1,8 +1,8 @@
 # DailyNews - Task
-
 Thank you for the opportunity to showcase my skills. Please go through the source code and implementation.
 
 ---
+
 ### Dashboard of the DailyNews Website.
 <img width="1918" height="1132" alt="image" src="https://github.com/user-attachments/assets/5c575e06-2670-4205-af5e-291dadf5f52e" />
 
